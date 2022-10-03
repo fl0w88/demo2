@@ -1,11 +1,13 @@
 package com.example.car;
 
-import java.util.UUID;
-
 public class Car implements Vehicle {
 
+    private final String serialNumber;
     private String color;
-    private final String serialNumber = UUID.randomUUID().toString();
+
+    public Car(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
 
     public void setColor(String color) {
         this.color = color;

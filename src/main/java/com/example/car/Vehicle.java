@@ -2,8 +2,8 @@ package com.example.car;
 
 public interface Vehicle {
 
-    String getColor();
+    public String getColor();
 
-    String getSerialNumber();
+    public String getSerialNumber();
 
 }
