@@ -12,17 +12,7 @@
 		</RollingFile>
 	</Appenders>
 	<Loggers>
-		<!-- Logger for hibernate classes -->
-		<Logger name="org.hibernate" level="info" additivity="false">
-			<AppenderRef ref="logfile" />
-			<AppenderRef ref="console" />
-		</Logger>
-		<Logger name="com.mchange" level="info" additivity="false">
-			<AppenderRef ref="logfile" />
-			<AppenderRef ref="console" />
-		</Logger>
-
-		<Root level="info">
+		<Root level="debug">
 			<AppenderRef ref="console" />
 			<AppenderRef ref="logfile" />
 		</Root>

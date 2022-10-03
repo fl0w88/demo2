@@ -30,7 +30,7 @@ public class Calculator {
         for (int i = 0; i < params.length; i++) {
             result += params[i];
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -40,7 +40,7 @@ public class Calculator {
         for (int i = 0; i < params.length; i++) {
             result = result.add(params[i]);
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -50,7 +50,7 @@ public class Calculator {
         for (int i = 0; i < params.length; i++) {
             result *= params[i];
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -60,7 +60,7 @@ public class Calculator {
         for (int i = 0; i < params.length; i++) {
             result = result.multiply(params[i]);
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -70,7 +70,7 @@ public class Calculator {
         for (int i = 1; i < params.length; i++) {
             result -= params[i];
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -80,7 +80,7 @@ public class Calculator {
         for (int i = 1; i < params.length; i++) {
             result = result.subtract(params[i]);
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -93,7 +93,7 @@ public class Calculator {
             }
             result /= params[i];
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
@@ -107,7 +107,7 @@ public class Calculator {
             }
             result = result.divide(params[i], 2, RoundingMode.HALF_UP);
         }
-        LOGGER.info("returning result: {}", result);
+        LOGGER.debug("returning result: {}", result);
         return result;
     }
 
