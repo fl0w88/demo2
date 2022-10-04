@@ -1,6 +1,7 @@
 package com.example.project.bdd.steps;
 
 import com.example.project.Calculator;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -20,6 +21,11 @@ public class CalculatorTest {
     @When("^I add (.+) and (.+)$")
     public void addNumbers(double a, double b) {
         result = calculator.add(a, b);
+    }
+
+    @And("^I subtract (.+)$")
+    public void subNumbers(double nr) {
+        result = calculator.subtract(result, nr);
     }
 
     @Then("^I get the result (.+)$")
