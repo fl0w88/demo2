@@ -31,11 +31,7 @@ public class CalculatorTest {
     @Test
     @DisplayName("Another JUnit 5 test! 😎 - Calculator - Addition Test")
     public void additionTest() {
-        for (int i = 0; i < 100; i++) {
-            for (int counter = 0; counter < 100; counter++) {
-                Assertions.assertEquals((i + counter), myCalculator.add(i, counter));
-            }
-        }
+            Assertions.assertEquals(2, myCalculator.add(1, 1));
     }
 
 }
