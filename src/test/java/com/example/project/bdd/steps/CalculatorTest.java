@@ -23,11 +23,6 @@ public class CalculatorTest {
         result = calculator.add(a, b);
     }
 
-    @And("^I subtract (.+)$")
-    public void subNumbers(double nr) {
-        result = calculator.subtract(result, nr);
-    }
-
     @Then("^I get the result (.+)$")
     public void verifyResult(double e) {
         Assertions.assertEquals(e, result);
