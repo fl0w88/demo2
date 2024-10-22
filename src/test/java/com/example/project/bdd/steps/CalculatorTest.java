@@ -13,6 +13,11 @@ public class CalculatorTest {
     private Calculator calculator;
     private double result;
 
+    @Given("^I have a brand new calculator$")
+    public void initNewCalculator() {
+        // do something
+    }
+
     @Given("^I am using my calculator$")
     public void initCalculator() {
         calculator = new Calculator();

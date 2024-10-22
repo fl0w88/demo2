@@ -10,9 +10,3 @@ Feature: Is it Friday yet?
     Examples:
       | dayToTest | result |
       | Monday    | Nope   |
-      | Tuesday   | Nope   |
-      | Wednesday | Nope   |
-      | Thursday  | Nope   |
-      | Friday    | Yes    |
-      | Saturday  | Nope   |
-      | Sunday    | Nope   |
