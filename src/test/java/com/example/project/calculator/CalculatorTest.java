@@ -31,7 +31,22 @@ public class CalculatorTest {
     @Test
     @DisplayName("Another JUnit 5 test! 😎 - Calculator - Addition Test")
     public void additionTest() {
-            Assertions.assertEquals(2, myCalculator.add(1, 1));
+        for (int i=1; i<100; i++) {
+            for (int j = 1; j < 100; j++) {
+                int expectedResult = i + j;
+                Assertions.assertEquals(expectedResult, myCalculator.add(i, j));
+            }
+        }
+    }
+
+    @Test
+    public void verifyAuthorTest() {
+        // verify that an author name exists for the calculator
+        Assertions.assertEquals("John Doe", myCalculator.authorName);
+        Assertions.assertNotNull(myCalculator.authorName);
+
+        Assertions.assertEquals("john.doe@gmail.com", myCalculator.authorEmail);
+        Assertions.assertNotNull(myCalculator.authorEmail);
     }
 
 }

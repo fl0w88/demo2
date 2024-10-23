@@ -12,8 +12,18 @@ public class CarFactoryTest {
     @DisplayName("Car factory test")
     public void testCarFactory() {
         Car blueCar = CarFactory.getCar("blue");
+
         Assertions.assertEquals("blue", blueCar.getColor());
         Assertions.assertNotNull(blueCar.getSerialNumber());
+    }
+
+    @Test
+    @DisplayName("Car factory test")
+    public void testRedCarFactory() {
+        Car redCar = CarFactory.getCar("red");
+
+        Assertions.assertEquals("red", redCar.getColor());
+        Assertions.assertNotNull(redCar.getSerialNumber());
     }
 
 }

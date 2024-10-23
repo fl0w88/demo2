@@ -28,6 +28,11 @@ public class CalculatorTest {
         result = calculator.add(a, b);
     }
 
+    @When("^I subtract (.+) - (.+)$")
+    public void subtractNumbers(double a, double b) {
+        result = calculator.subtract(a, b);
+    }
+
     @Then("^I get the result (.+)$")
     public void verifyResult(double e) {
         Assertions.assertEquals(e, result);
